@@ -78,3 +78,10 @@ bool Vector::operator==(Vector &obj) {
 		return true;
 	}
 }
+
+Vector  Vector::operator+(const Vector &obj) {
+	for (int i = 0; i < size(); i++)
+	{
+		els[i] += obj.els[i];
+	}
+}

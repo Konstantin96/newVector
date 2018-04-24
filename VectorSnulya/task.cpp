@@ -27,6 +27,8 @@ int main() {
 
 	cout << "\n\n" << endl;
 	cout << (v==v2) << endl;
+	cout << "\n\n" << endl;
+	cout << v + v2 << endl;
 	system("pause");
 	return 0;
 }

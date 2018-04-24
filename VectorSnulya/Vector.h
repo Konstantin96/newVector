@@ -17,6 +17,7 @@ public:
 
 	//operators
 	Vector operator=(const Vector &obj);
+	Vector operator+(const Vector &obj);
 	double &operator[](int index);
 
 	//methods
@@ -24,6 +25,10 @@ public:
 	double& at(int index);
 
 	bool Vector::operator==(Vector &obj);
+
+
+
 	~Vector() { delete[]els; }
+
 
 };
