@@ -114,7 +114,7 @@ ostream& operator<<(ostream& os, Vector v) {
 	}
 }
 
-ifstream& operator<<(ifstream& os, Vector v) {
+istream& operator>>(istream& os, Vector v) {
 	for (int i = 0; i < v.size(); i++)
 	{
 		os >> v[i];

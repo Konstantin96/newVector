@@ -24,7 +24,7 @@ public:
 	bool operator==(Vector &obj);
 	bool operator!=(Vector &obj);
 	friend ostream& operator<<(ostream& os, Vector v);
-	friend ifstream& operator>>(ifstream& os, Vector v);
+	friend istream& operator>>(istream& os, Vector v);
 
 
 	//methods
