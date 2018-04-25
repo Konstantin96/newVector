@@ -1,4 +1,6 @@
+#include <iostream>
 #pragma once
+using namespace std;
 
 class Vector {
 private:
@@ -21,7 +23,8 @@ public:
 	double &operator[](int index);
 	bool operator==(Vector &obj);
 	bool operator!=(Vector &obj);
-
+	friend ostream& operator<<(ostream& os, Vector v);
+	friend ifstream& operator>>(ifstream& os, Vector v);
 
 
 	//methods

@@ -70,7 +70,7 @@ bool Vector::operator==(Vector &obj) {
 	if (size() != obj.size())
 		return false;
 	else {
-		for (int  i = 0; i < size(); i++)
+		for (int i = 0; i < size(); i++)
 		{
 			if (els[i] != obj.els[i])
 				return false;
@@ -105,3 +105,20 @@ bool Vector::operator!=(Vector &obj) {
 		return false;
 	}
 }
+
+ostream& operator<<(ostream& os, Vector v) {
+	for (int i = 0; i < v.size(); i++)
+	{
+		os << v[i] << "\t";
+		return os;
+	}
+}
+
+ifstream& operator<<(ifstream& os, Vector v) {
+	for (int i = 0; i < v.size(); i++)
+	{
+		os >> v[i];
+		return os;
+	}
+}
+
