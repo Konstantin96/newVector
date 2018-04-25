@@ -79,9 +79,29 @@ bool Vector::operator==(Vector &obj) {
 	}
 }
 
-Vector  Vector::operator+(const Vector &obj) {
+void  Vector::operator+(const Vector &obj) {
 	for (int i = 0; i < size(); i++)
 	{
 		els[i] += obj.els[i];
+	}
+}
+
+void  Vector::operator-(const Vector &obj) {
+	for (int i = 0; i < size(); i++)
+	{
+		els[i] -= obj.els[i];
+	}
+}
+
+bool Vector::operator!=(Vector &obj) {
+	if (size() != obj.size())
+		return true;
+	else {
+		for (int i = 0; i < size(); i++)
+		{
+			if (els[i] != obj.els[i])
+				return true;
+		}
+		return false;
 	}
 }

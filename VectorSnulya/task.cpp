@@ -28,7 +28,25 @@ int main() {
 	cout << "\n\n" << endl;
 	cout << (v==v2) << endl;
 	cout << "\n\n" << endl;
-	cout << v + v2 << endl;
+	v + v2;
+	for (int i = 0;i < 3;i++)
+	{
+		cout << v[i] << endl;
+	}
+	cout << "\n\n" << endl;
+	v[0] = 3.8;
+	v[1] = 2.3;
+	v[2] = 1.2;
+	v2[0] = 2.2;
+	v2[1] = 1.1;
+	v2[2] = 0.3;
+	v - v2;
+	for (int i = 0;i < 3;i++)
+	{
+		cout << v[i] << endl;
+	}
+	cout << "\n\n" << endl;
+	cout << (v != v2) << endl;
 	system("pause");
 	return 0;
 }
